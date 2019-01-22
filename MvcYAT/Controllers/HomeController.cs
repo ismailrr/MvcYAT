@@ -13,6 +13,35 @@ namespace MvcYAT.Controllers
             return View();
         }
 
+        public ActionResult Qurban()
+        {
+            return View();
+        }
+
+        public ActionResult Donasi()
+        {
+            return View();
+        }
+
+        public ActionResult Struktur()
+        {
+            return View();
+        }
+        public ActionResult VisiMisi()
+        {
+            return View();
+        }
+
+        public ActionResult Liputan()
+        {
+            return View();
+        }
+
+        public ActionResult Sejarah()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

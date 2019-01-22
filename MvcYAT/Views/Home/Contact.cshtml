@@ -1,17 +1,157 @@
 ﻿@{
     ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_pageyat.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<!-- Start main-content -->
+<div class="main-content">
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <!-- Section: inner-header -->
+    <section class="inner-header divider layer-overlay overlay-dark-7" data-bg-img="@Url.Content("~/Content/yat/")images/yat/empty-cupped-male-hands-pleading-and-begging-P9X2YR7.jpg">
+        <div class="container pt-30 pb-30">
+            <!-- Section Content -->
+            <div class="section-content text-center">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h3 class="title text-white">Kontak<h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider: Contact -->
+    <section>
+        <div class="container">
+            <div class="row pt-30">
+                <div class="col-md-5">
+                    <h3 class="line-bottom mt-0 mb-30">Ingin berdiskusi lebih lanjut ?</h3>
+
+                    <!-- Contact Form -->
+                    <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Nama <small>*</small></label>
+                                    <input name="form_name" class="form-control" type="text" placeholder="masukan nama" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Email <small>*</small></label>
+                                    <input name="form_email" class="form-control required email" type="email" placeholder="masukan email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Judul <small>*</small></label>
+                                    <input name="form_subject" class="form-control required" type="text" placeholder="masukan judul">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Nomor.Telp/Hp</label>
+                                    <input name="form_phone" class="form-control" type="text" placeholder="masukan nomor.telp">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea name="form_message" class="form-control required" rows="5" placeholder="tulis pesan"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                            <button type="submit" class="btn btn-dark btn-theme-colored btn-flat mr-5" data-loading-text="Tunggu...">Kirim</button>
+                            <button type="reset" class="btn btn-default btn-flat btn-theme-colored">Ulang</button>
+                        </div>
+                    </form>
+
+                    <!-- Contact Form Validation-->
+                    <script type="text/javascript">
+                        $("#contact_form").validate({
+                            submitHandler: function (form) {
+                                var form_btn = $(form).find('button[type="submit"]');
+                                var form_result_div = '#form-result';
+                                $(form_result_div).remove();
+                                form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                                var form_btn_old_msg = form_btn.html();
+                                form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                                $(form).ajaxSubmit({
+                                    dataType: 'json',
+                                    success: function (data) {
+                                        if (data.status == 'true') {
+                                            $(form).find('.form-control').val('');
+                                        }
+                                        form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                        $(form_result_div).html(data.message).fadeIn('slow');
+                                        setTimeout(function () { $(form_result_div).fadeOut('slow') }, 6000);
+                                    }
+                                });
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <h3 class="line-bottom mt-0 mb-50 ml-15">Alamat & Kontak</h3>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="icon-box media bg-deep p-30 mb-20">
+                                <a class="media-left pull-left flip" href="#"> <i class="fa fa-file-text text-theme-colored"></i></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0">WA/SMS Center</h5>
+                                    <p>0815 17 2000 10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="icon-box media bg-deep p-30 mb-20">
+                                <a class="media-left pull-left flip" href="#"> <i class="pe-7s-mail text-theme-colored"></i></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0">Alamat Email</h5>
+                                    <p>amanah@takaful.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="icon-box media bg-deep p-30 mb-20">
+                                <a class="media-left pull-left flip" href="#"> <i class="pe-7s-map-2 text-theme-colored"></i></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0">Lokasi Kantor</h5>
+                                    <p>Jl. Mampang Prapatan Raya No. 100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="icon-box media bg-deep p-30 mb-20">
+                                <a class="media-left pull-left flip" href="#"> <i class="pe-7s-call text-theme-colored"></i></a>
+                                <div class="media-body">
+                                    <h5 class="mt-0">Telp</h5>
+                                    <p>021 799 1234 (ext 1217) & 021 7919 3662</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider: Google Map -->
+    <section class="section-map">
+        <div class="container-fluid pt-0 pb-0">
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.388764643481!2d106.8263591!3d-6.2509231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ddf9f7849b8e43f!2sGraha+Takaful!5e0!3m2!1sid!2sid!4v1542349839873" width="auto" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!-- Google Map Javascript Codes -->
+                <script src="http://maps.google.com/maps/api/js?key=AIzaSyAYWE4mHmR9GyPsHSOVZrSCOOljk8DU9B4"></script>
+                <script src="js/google-map-init-multilocation.js"></script>
+
+            </div>
+        </div>
+    </section>
+    <!-- end main-content -->
+</div>

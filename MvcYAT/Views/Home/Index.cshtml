@@ -1,31 +1,948 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    ViewBag.Title = "Beranda";
+    Layout = "~/Views/Shared/_pageyat.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+<!-- Start main-content -->
+<div class="main-content">
+    <!-- Section: home -->
+    <section id="home">
+        <div class="container-fluid p-0">
+
+            <!-- Slider Revolution Start -->
+            <div class="rev_slider_wrapper">
+                <div class="rev_slider rev_slider_default" data-version="5.0">
+                    <ul>
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="@Url.Content("~/Content/yat/")images/yat/best.jpg" alt="" data-bgposition="center 70%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                                 id="rs-1-layer-1"
+                                 data-x="['left']"
+                                 data-hoffset="['30']"
+                                 data-y="['middle']"
+                                 data-voffset="['-110']"
+                                 data-fontsize="['110']"
+                                 data-lineheight="['120']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 7; white-space: nowrap; font-weight:700;">
+                                Amanah Takaful
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent pl-20 pr-20"
+                                 id="rs-1-layer-2"
+                                 data-x="['left']"
+                                 data-hoffset="['35']"
+                                 data-y="['middle']"
+                                 data-voffset="['-25']"
+                                 data-fontsize="['35']"
+                                 data-lineheight="['54']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 7; white-space: nowrap; font-weight:600;">
+                                Lembaga Kemanusiaan
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme text-white"
+                                 id="rs-1-layer-3"
+                                 data-x="['left']"
+                                 data-hoffset="['35']"
+                                 data-y="['middle']"
+                                 data-voffset="['35','35','40']"
+                                 data-fontsize="['16','18',24']"
+                                 data-lineheight="['28']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1400"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">
+                                berbasis pemberdayaan yang amanah dan profesional.
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption tp-resizeme"
+                                 id="rs-1-layer-4"
+                                 data-x="['left']"
+                                 data-hoffset="['35']"
+                                 data-y="['middle']"
+                                 data-voffset="['95','105','110']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;"
+                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1400"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
+                                @*<a class="btn btn-colored btn-lg btn-theme-colored pl-20 pr-20" href="#">Donate Now</a>*@
+                            </div>
+                        </li>
+
+                        <!-- SLIDE 2 -->
+                        <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="@Url.Content("~/Content/yat/")images/yat/lkm.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme text-uppercase  bg-dark-transparent text-white font-raleway pl-30 pr-30"
+                                 id="rs-2-layer-1"
+                                 data-x="['center']"
+                                 data-hoffset="['0']"
+                                 data-y="['middle']"
+                                 data-voffset="['-90']"
+                                 data-fontsize="['28']"
+                                 data-lineheight="['54']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px;">
+                                Bidang Kesehatan
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white font-raleway pl-30 pr-30"
+                                 id="rs-2-layer-2"
+                                 data-x="['center']"
+                                 data-hoffset="['0']"
+                                 data-y="['middle']"
+                                 data-voffset="['-20']"
+                                 data-fontsize="['48']"
+                                 data-lineheight="['70']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;">
+                                Amanah Sehat
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme text-white text-center"
+                                 id="rs-2-layer-3"
+                                 data-x="['center']"
+                                 data-hoffset="['0']"
+                                 data-y="['middle']"
+                                 data-voffset="['50']"
+                                 data-fontsize="['16','18',24']"
+                                 data-lineheight="['28']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1400"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">
+                                Pelayanan kesehatan secara GRATIS
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption tp-resizeme"
+                                 id="rs-2-layer-4"
+                                 data-x="['center']"
+                                 data-hoffset="['0']"
+                                 data-y="['middle']"
+                                 data-voffset="['115']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;"
+                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1400"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
+                                @*<a class="btn btn-default btn-circled btn-theme-colored pl-20 pr-20" href="#">Donate Now</a>*@
+                            </div>
+                        </li>
+
+                        <!-- SLIDE 3 -->
+                        <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-saveperformance="off" data-title="Slide 3" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="@Url.Content("~/Content/yat/")images/yat/tbr.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent pr-20 pl-20"
+                                 id="rs-3-layer-1"
+                                 data-x="['right']"
+                                 data-hoffset="['30']"
+                                 data-y="['middle']"
+                                 data-voffset="['-90']"
+                                 data-fontsize="['64']"
+                                 data-lineheight="['72']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 7; white-space: nowrap; font-weight:600;">
+                                Amanah Sosial
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                                 id="rs-3-layer-2"
+                                 data-x="['right']"
+                                 data-hoffset="['35']"
+                                 data-y="['middle']"
+                                 data-voffset="['-25']"
+                                 data-fontsize="['32']"
+                                 data-lineheight="['54']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 7; white-space: nowrap; font-weight:600;">
+                                Sosial & Kemanusiaan
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme text-white text-right"
+                                 id="rs-3-layer-3"
+                                 data-x="['right']"
+                                 data-hoffset="['35']"
+                                 data-y="['middle']"
+                                 data-voffset="['30']"
+                                 data-fontsize="['16','18',24']"
+                                 data-lineheight="['28']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1400"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">
+                                Program untuk Mereka yang membutuhkan uluran tangan kita
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption tp-resizeme"
+                                 id="rs-3-layer-4"
+                                 data-x="['right']"
+                                 data-hoffset="['35']"
+                                 data-y="['middle']"
+                                 data-voffset="['95']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;"
+                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1400"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
+                                @*<a class="btn btn-colored btn-lg btn-flat btn-theme-colored pl-20 pr-20" href="#">Donate Now</a>*@
+                            </div>
+                        </li>
+
+                        <!-- SLIDE 4 -->
+                        <li data-index="rs-4" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-saveperformance="off" data-title="Slide 1" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="@Url.Content("~/Content/yat/")images/Reguler/AmanahWakaf/banner_amanah_wakaf.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme text-uppercase  bg-dark-transparent text-white font-raleway pl-30 pr-30"
+                                 id="rs-2-layer-1"
+                                 data-x="['center']"
+                                 data-hoffset="['0']"
+                                 data-y="['middle']"
+                                 data-voffset="['-90']"
+                                 data-fontsize="['28']"
+                                 data-lineheight="['54']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px;">
+                                Wakaf Alqur'an
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white font-raleway pl-30 pr-30"
+                                 id="rs-2-layer-2"
+                                 data-x="['center']"
+                                 data-hoffset="['0']"
+                                 data-y="['middle']"
+                                 data-voffset="['-20']"
+                                 data-fontsize="['48']"
+                                 data-lineheight="['70']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;">
+                                Amanah Wakaf
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme text-white text-center"
+                                 id="rs-2-layer-3"
+                                 data-x="['center']"
+                                 data-hoffset="['0']"
+                                 data-y="['middle']"
+                                 data-voffset="['50']"
+                                 data-fontsize="['16','18',24']"
+                                 data-lineheight="['28']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;s:500"
+                                 data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                 data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1400"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">
+                                Program penyaluran dana Wakaf yang sudah berjalan sejak 2015 diawali dengan wakaf al Qur’an
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption tp-resizeme"
+                                 id="rs-2-layer-4"
+                                 data-x="['center']"
+                                 data-hoffset="['0']"
+                                 data-y="['middle']"
+                                 data-voffset="['115']"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-transform_idle="o:1;"
+                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1400"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 5; white-space: nowrap; letter-spacing:1px;">
+                                @*<a class="btn btn-default btn-circled btn-theme-colored pl-20 pr-20" href="#">Donate Now</a>*@
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- end .rev_slider -->
+            </div>
+            <!--  Revolution slider scriopt -->
+            <script>
+          $(document).ready(function(e) {
+            $(".rev_slider_default").revolution({
+              sliderType:"standard",
+              sliderLayout: "auto",
+              dottedOverlay: "none",
+              delay: 5000,
+              navigation: {
+                keyboardNavigation: "off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation: "off",
+                onHoverStop: "off",
+                touch: {
+                  touchenabled: "on",
+                  swipe_threshold: 75,
+                  swipe_min_touches: 1,
+                  swipe_direction: "horizontal",
+                  drag_block_vertical: false
+                },
+                arrows: {
+                  style:"zeus",
+                  enable:true,
+                  hide_onmobile:true,
+                  hide_under:600,
+                  hide_onleave:true,
+                  hide_delay:200,
+                  hide_delay_mobile:1200,
+                  //tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                  left: {
+                    h_align:"left",
+                    v_align:"center",
+                    h_offset:30,
+                    v_offset:0
+                  },
+                  right: {
+                    h_align:"right",
+                    v_align:"center",
+                    h_offset:30,
+                    v_offset:0
+                  }
+                },
+                bullets: {
+                  enable:true,
+                  hide_onmobile:true,
+                  hide_under:600,
+                  style:"metis",
+                  hide_onleave:true,
+                  hide_delay:200,
+                  hide_delay_mobile:1200,
+                  direction:"horizontal",
+                  h_align:"center",
+                  v_align:"bottom",
+                  h_offset:0,
+                  v_offset:30,
+                  space:5,
+                  //tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
+                }
+              },
+              responsiveLevels: [1240, 1024, 778],
+              visibilityLevels: [1240, 1024, 778],
+              gridwidth: [1170, 1024, 778, 480],
+              gridheight: [700, 768, 960, 720],
+              lazyType: "none",
+              parallax: {
+                origo: "slidercenter",
+                speed: 1000,
+                levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
+                type: "scroll"
+              },
+              shadow: 0,
+              spinner: "off",
+              stopLoop: "on",
+              stopAfterLoops: 0,
+              stopAtSlide: -1,
+              shuffle: "off",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                simplifyAll: "off",
+                nextSlideOnWindowFocus: "off",
+                disableFocusListener: false,
+              }
+            });
+          });
+            </script>
+            <!-- Slider Revolution Ends -->
+        </div>
+    </section>
+
+    <!-- Section: liputan -->
+    @*<section id="liputan">
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h2 class="text-uppercase line-bottom-center mt-0">Amanah Takaful <span class="text-theme-colored font-weight-600">Terkini</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row multi-row-clearfix">
+                    <div class="owl-carousel-4col">
+                        <div class="item">
+                            <div class="liputan bg-white maxwidth500 mb-30">
+                                <div class="thumb">
+                                    <img src="@Url.Content("~/Content/yat/")images/yat/amanah-qurban.jpg" alt="" class="img-fullwidth">
+                                </div>
+                                <div class="liputan-details clearfix border-bottom p-15 pt-15 pb-15">
+                                    <h4 class="text-uppercase"><a href="page-single-cause.html">Program Amanah Qurban</a></h4>
+                                    <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="liputan bg-white maxwidth500 mb-30">
+                                <div class="thumb">
+                                    <img src="@Url.Content("~/Content/yat/")images/yat/waqaf-quran.jpg" alt="" class="img-fullwidth">
+                                </div>
+                                <div class="liputan-details clearfix border-bottom p-15 pt-15 pb-15">
+                                    <h4 class="text-uppercase"><a href="page-single-cause.html">Program Amanah Wakaf Al Qur'an</a></h4>
+                                    <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="liputan bg-white maxwidth500 mb-30">
+                                <div class="thumb">
+                                    <img src="@Url.Content("~/Content/yat/")images/yat/amanah-sosial.jpg" alt="" class="img-fullwidth">
+                                </div>
+                                <div class="liputan-details clearfix border-bottom p-15 pt-15 pb-15">
+                                    <h4 class="text-uppercase"><a href="page-single-cause.html">Program Amanah Sosial dan Kemanusiaan</a></h4>
+                                    <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="liputan bg-white maxwidth500 mb-30">
+                                <div class="thumb">
+                                    <img src="@Url.Content("~/Content/yat/")images/yat/amanah-cerdas.jpg" alt="" class="img-fullwidth">
+                                </div>
+                                <div class="liputan-details clearfix border-bottom p-15 pt-15 pb-15">
+                                    <h4 class="text-uppercase"><a href="amanah-cerdas.html">Program Amanah Cerdas</a></h4>
+                                    <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="liputan bg-white maxwidth500 mb-30">
+                                <div class="thumb">
+                                    <img src="@Url.Content("~/Content/yat/")images/yat/amanah-sehat.jpg" alt="" class="img-fullwidth">
+                                </div>
+                                <div class="liputan-details clearfix border-bottom p-15 pt-15 pb-15">
+                                    <h4 class="text-uppercase"><a href="page-single-cause.html">Program Amanah Sehat</a></h4>
+                                    <p class="mt-20">Lorem ipsum dolor sit amet, consect adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+
+    <!-- Section: galeri -->
+    <section id="galeri">
+        <div class="container">
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 section-title">
+                        <h2 class="text-uppercase line-bottom-center mt-0">Galeri <span class="text-theme-colored font-weight-600">Amanah Takaful</span></h2>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div id="grid" class="gallery-isotope grid-3 gutter clearfix">
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/Reguler/AmanahBinaQuran/rq4.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahBinaQuran/rq4.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahBinaQuran/rq4.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/best/best4.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/best/best4.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/best/best4.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/dpn/dpn4.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/dpn/dpn4.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/dpn/dpn4.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/best/best2.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/best/best2.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahCerdas/best/best2.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/yat/banner_bantuan_islam.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/yat/banner_bantuan_islam.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahBinaCerdas/beasiswa/beasiswa3.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/yat/amanah-cerdas.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/yat/amanah-cerdas.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahBinaCerdas/beasiswa/beasiswa3.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan3.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan3.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan3.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan1.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan1.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan1.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                <div class="col-lg-4 gallery-item">
+                                    <div class="thumb">
+                                        <img class="img-fullwidth" src="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan2.jpg" alt="project">
+                                        <div class="overlay-shade"></div>
+                                        <div class="icons-holder">
+                                            <div class="icons-holder-inner">
+                                                <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                                                    <a data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan2.jpg"><i class="fa fa-picture-o"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="hover-link" data-lightbox="image" href="@Url.Content("~/Content/yat/")images/Reguler/AmanahSehat/pelayanan_kesehatan/pelayanan_kesehatan2.jpg">View more</a>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                                @*<div class="col-lg-4 gallery-item">
+            <div class="thumb">
+                <div class="flexslider-wrapper">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li><a href="http://placehold.it/470x320" title="Portfolio Gallery - Photo 1"><img src="@Url.Content("~/Content/yat/")images/yat/7.png" alt=""></a></li>
+                            <li><a href="http://placehold.it/470x320" title="Portfolio Gallery - Photo 2"><img src="@Url.Content("~/Content/yat/")images/yat/2.png" alt=""></a></li>
+                            <li><a href="http://placehold.it/470x320" title="Portfolio Gallery - Photo 3"><img src="@Url.Content("~/Content/yat/")images/yat/3.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay-shade"></div>
+                <div class="icons-holder">
+                    <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                            <a data-lightbox="image" href="http://placehold.it/540x370"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+                                <!-- Portfolio Item Start -->
+                                @*<div class="col-lg-4 gallery-item left text-silver-light">
+            <i class="fa fa-picture-o"></i>
+            <a href="#">More Galleries</a>
+        </div>*@
+                                <!-- Portfolio Item End -->
+                            </div>
+                            <!-- End Portfolio Gallery Grid -->
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="fluid-video-wrapper">
+                                <iframe width="560" height="355" src="https://www.youtube.com/embed/gtE4xwCVxxQ" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: program  -->
+    <section id="program" class="bg-blue-yat">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-10 col-md-offset-1 section-title">
+                    <h2 class="text-uppercase line-bottom-center mt-0">Program <span class="text-theme-colored font-weight-600" style="color:white !important">Amanah Takaful</span></h2>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        @*<div class="owl-carousel-1col">*@
+                        <div>
+                            <div class="item">
+                                <div class="liputan maxwidth500 mb-sm-30">
+                                    <div class="thumb">
+                                        <img src="@Url.Content("~/Content/yat/")images/yat/1.png">
+                                    </div>
+                                </div>
+                            </div>
+                            @*<div class="item">
+                                    <div class="liputan maxwidth500 mb-sm-30">
+                                        <div class="thumb">
+                                            <img src="@Url.Content("~/Content/yat/")images/yat/1.png">
+                                        </div>
+                                    </div>
+                                </div>*@
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 mt-12">
+                        <ul>
+                            <li>
+                                <img src="@Url.Content("~/Content/yat/")images/yat/quran.png" alt="" class="img-circle">
+                                <a href="@Url.Action("Index","AmanahBinaQuran")" class="text-white">Amanah Bina Alquran</a>
+                            </li>
+                            <li>
+                                <img src="@Url.Content("~/Content/yat/")images/yat/light-bulb.png" alt="" class="img-circle">
+                                <a href="@Url.Action("Index","AmanaCerdas")" class="text-white">Amanah Cerdas</a>
+                            </li>
+                            <li>
+                                <img src="@Url.Content("~/Content/yat/")images/yat/agreement.png" alt="" class="img-circle">
+                                <a href="@Url.Action("Index","AmanahMandiri")" class="text-white">Amanah Mandiri</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 mt-12  text-white">
+                        <ul>
+                            <li>
+                                <img src="@Url.Content("~/Content/yat/")images/yat/drop.png" alt="" class="img-circle">
+                                <a href="@Url.Action("Index","AmanahSehat")" class="text-white">Amanah Sehat</a>
+                            </li>
+                            <li>
+                                <img src="@Url.Content("~/Content/yat/")images/yat/agreement.png" alt="" class="img-circle">
+                                <a href="@Url.Action("Index","AmanahSosialKemanusiaan")" class="text-white">Amanah Sosial Kemanusiaan</a>
+                            </li>
+                            <li>
+                                <img src="@Url.Content("~/Content/yat/")images/yat/goat.png" alt="" class="img-circle">
+                                <a href="@Url.Action("Index","AmanahWakaf")" class="text-white">Amanah Wakaf</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider: Testimonials -->
+    @*<section class="divider bg-blue-yat">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="owl-carousel-1col testimonials" data-dots="true">
+                        <div class="item">
+                            <div class="testimonial-wrapper text-center">
+                                <div class="thumb">
+                                    <img class="img-circle" alt="" src="@Url.Content("~/Content/yat/")images/flaticon-png/small/1.png">
+                                </div>
+                                <div class="content pt-10">
+                                    <p class="font-14 text-white mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque itaque officiis et sit. Vero quo, impedit neque.</p>
+                                    <i class="fa fa-quote-right"></i>
+                                    <h4 class="author mb-0">Catherine Grace</h4>
+                                    <h6 class="title text-gray-lightgray mt-0 mb-15">Designer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-wrapper text-center">
+                                <div class="thumb">
+                                    <img class="img-circle" alt="" src="@Url.Content("~/Content/yat/")images/flaticon-png/small/2.png">
+                                </div>
+                                <div class="content pt-10">
+                                    <p class="font-14 text-white mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque itaque officiis et sit. Vero quo, impedit neque.</p>
+                                    <i class="fa fa-quote-right"></i>
+                                    <h4 class="author mb-0">Catherine Grace</h4>
+                                    <h6 class="title text-gray-lightgray mt-0 mb-15">Designer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-wrapper text-center">
+                                <div class="thumb">
+                                    <img class="img-circle" alt="" src="@Url.Content("~/Content/yat/")images/flaticon-png/small/3.png">
+                                </div>
+                                <div class="content pt-10">
+                                    <p class="font-14 text-white mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam, expedita placeat facilis odio illo ex accusantium eaque itaque officiis et sit. Vero quo, impedit neque.</p>
+                                    <i class="fa fa-quote-right"></i>
+                                    <h4 class="author mb-0">Catherine Grace</h4>
+                                    <h6 class="title text-gray-lightgray mt-0 mb-15">Designer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+    <!-- Divider: Clients -->
+    @*<section class="clients">
+            <div class="container pt-0 pb-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Section: Clients -->
+                        <div class="owl-carousel-6col clients-logo transparent text-center">
+                            <div class="item"> <a href="#"><img src="@Url.Content("~/Content/yat/")images/logo/1.png" alt=""></a></div>
+                            <div class="item"> <a href="#"><img src="@Url.Content("~/Content/yat/")images/logo/2.png" alt=""></a></div>
+                            <div class="item"> <a href="#"><img src="@Url.Content("~/Content/yat/")images/logo/3.png" alt=""></a></div>
+                            <div class="item"> <a href="#"><img src="@Url.Content("~/Content/yat/")images/logo/4.png" alt=""></a></div>
+                            <div class="item"> <a href="#"><img src="@Url.Content("~/Content/yat/")images/logo/5.png" alt=""></a></div>
+                            <div class="item"> <a href="#"><img src="@Url.Content("~/Content/yat/")images/logo/6.png" alt=""></a></div>
+                            <div class="item"> <a href="#"><img src="@Url.Content("~/Content/yat/")images/logo/7.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
 </div>
+<!-- end main-content -->
