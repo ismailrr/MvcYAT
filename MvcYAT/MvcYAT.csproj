@@ -199,9 +199,11 @@
     <Compile Include="Controllers\BantuanSosialController.cs" />
     <Compile Include="Controllers\BeasiswaController.cs" />
     <Compile Include="Controllers\BencanaAlamController.cs" />
+    <Compile Include="Controllers\BerandaController.cs" />
     <Compile Include="Controllers\BestController.cs" />
     <Compile Include="Controllers\DpnController.cs" />
-    <Compile Include="Controllers\DuniaIslamController.cs" />
+    <Compile Include="Controllers\GaleriController.cs" />
+    <Compile Include="Controllers\GeneralController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InspirasiController.cs" />
     <Compile Include="Controllers\IRegulerController.cs" />
@@ -216,6 +218,7 @@
     <Compile Include="Controllers\RamadhanController.cs" />
     <Compile Include="Controllers\RegulerController.cs" />
     <Compile Include="Controllers\SejahteraController.cs" />
+    <Compile Include="Controllers\SliderController.cs" />
     <Compile Include="Controllers\TasController.cs" />
     <Compile Include="Data\BaseRepository.cs" />
     <Compile Include="Data\DbInitializer.cs" />
@@ -234,9 +237,11 @@
     <Compile Include="Models\BantuanSosial.cs" />
     <Compile Include="Models\Beasiswa.cs" />
     <Compile Include="Models\BencanaAlam.cs" />
+    <Compile Include="Models\Beranda.cs" />
     <Compile Include="Models\Best.cs" />
     <Compile Include="Models\Dpn.cs" />
-    <Compile Include="Models\DuniaIslam.cs" />
+    <Compile Include="Models\Galeri.cs" />
+    <Compile Include="Models\General.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Inspirasi.cs" />
     <Compile Include="Models\InspirasiTag.cs" />
@@ -248,6 +253,7 @@
     <Compile Include="Models\Pelayanan.cs" />
     <Compile Include="Models\Ramadhan.cs" />
     <Compile Include="Models\Sejahtera.cs" />
+    <Compile Include="Models\Slider.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\Tas.cs" />
     <Compile Include="PaginatedList.cs" />
@@ -8539,9 +8545,26 @@
     <Content Include="Views\BantuanKritis\Details.cshtml" />
     <Content Include="Views\BantuanKritis\Edit.cshtml" />
     <Content Include="Views\BantuanKritis\Index.cshtml" />
-    <Content Include="Views\DuniaIslam\Details.cshtml" />
-    <Content Include="Views\DuniaIslam\Edit.cshtml" />
-    <Content Include="Views\DuniaIslam\Index.cshtml" />
+    <Content Include="Views\General\Create.cshtml" />
+    <Content Include="Views\General\Delete.cshtml" />
+    <Content Include="Views\General\Details.cshtml" />
+    <Content Include="Views\General\Edit.cshtml" />
+    <Content Include="Views\General\Index.cshtml" />
+    <Content Include="Views\Slider\Create.cshtml" />
+    <Content Include="Views\Slider\Delete.cshtml" />
+    <Content Include="Views\Slider\Details.cshtml" />
+    <Content Include="Views\Slider\Edit.cshtml" />
+    <Content Include="Views\Slider\Index.cshtml" />
+    <Content Include="Views\Beranda\Create.cshtml" />
+    <Content Include="Views\Beranda\Delete.cshtml" />
+    <Content Include="Views\Beranda\Details.cshtml" />
+    <Content Include="Views\Beranda\Edit.cshtml" />
+    <Content Include="Views\Beranda\Index.cshtml" />
+    <Content Include="Views\Galeri\Create.cshtml" />
+    <Content Include="Views\Galeri\Delete.cshtml" />
+    <Content Include="Views\Galeri\Details.cshtml" />
+    <Content Include="Views\Galeri\Edit.cshtml" />
+    <Content Include="Views\Galeri\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -52,7 +52,6 @@ namespace MvcYAT.Models
         public DbSet<BencanaAlam> DaftarBencanaAlam { get; set; }
         public DbSet<Best> DaftarBest { get; set; }
         public DbSet<Dpn> DaftarDpn { get; set; }
-        public DbSet<DuniaIslam> DaftarDuniaIslam { get; set; }
         public DbSet<Koperasi> DaftarKoperasi { get; set; }
         public DbSet<Modal> DaftarModal { get; set; }
         public DbSet<Mtv> DaftarMtv { get; set; }
@@ -80,7 +79,6 @@ namespace MvcYAT.Models
             builder.Entity<BencanaAlam>().ToTable("becancaalam");
             builder.Entity<Best>().ToTable("best");
             builder.Entity<Dpn>().ToTable("dpn");
-            builder.Entity<DuniaIslam>().ToTable("duniaislam");
             builder.Entity<Koperasi>().ToTable("koperasi");
             builder.Entity<Modal>().ToTable("modal");
             builder.Entity<Mtv>().ToTable("mtv");
@@ -90,6 +88,14 @@ namespace MvcYAT.Models
             builder.Entity<Tas>().ToTable("tas");
             builder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<MvcYAT.Models.General> Generals { get; set; }
+
+        public System.Data.Entity.DbSet<MvcYAT.Models.Slider> Sliders { get; set; }
+
+        public System.Data.Entity.DbSet<MvcYAT.Models.Beranda> Berandas { get; set; }
+
+        public System.Data.Entity.DbSet<MvcYAT.Models.Galeri> Galeris { get; set; }
 
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
